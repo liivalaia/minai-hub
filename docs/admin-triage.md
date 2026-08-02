@@ -31,17 +31,21 @@ eraldi** (uus issue/PR/commit seal). See hub **ei muuda** `minai`'t automaatselt
 > NB: `minai` privaatse repo muutmiseks on vaja eraldi luba. Ära sünkrooni
 > automaatselt.
 
-## 4. Valikuline: privaatne triaažirepo
+## 4. Cross-repo agent (mover) ja intake-kihid
 
-Kui soovid struktureeritud, agentile loetavat triaaži (mitte ainult vormi
-dashboard), loo **eraldi privaatne** repo, nt `minai-hub-inbox`:
+Tagasiside torul on kaks kihti — hoia need lahus:
 
-- Vormi vastused → privaatse repo Issues/failid (nt vormi automatiseeringu või
-  ekspordi kaudu).
-- **Privaatne**, et avalik ei näe sisu. Ära pane saadetisi selle avaliku hub'i
-  tippu.
+- **Intake (kust avalik saadab):** eelistatud on **privaatne vorm** (nt Google
+  Form minai domeenil), et saadetised jääksid mitteavalikuks ja oleksid agendile
+  kättesaadavad (Sheet/API). Avalik GitHub Issue Form on ainult vahefallback ja
+  teeb saadetised avalikult nähtavaks — kasuta seda ainult omaniku selgel loal.
+- **Mover (kes tõstab põhikohta):** **eraldi cross-repo agent**, millel on
+  ligipääs nii `minai` kui `minai-hub`, tõstab triaažitud tagasiside privaatsesse
+  `minai`-sse. See hub ise `minai`-t ei muuda.
 
-See on soovitus, mitte praegu seadistatud osa.
+Valikuline: struktureeritud, agentile loetava triaaži jaoks võib mover
+kirjutada **eraldi privaatsesse** repo'sse (nt `minai-hub-inbox`) — mitte selle
+avaliku hub'i tippu.
 
 ## 5. Baas-minai docs joondamine (hiljem)
 
