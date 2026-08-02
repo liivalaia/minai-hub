@@ -32,6 +32,13 @@ Palun ära lisa tagasisidesse:
 
 Vorm ei nõua isikuandmeid; jäta need välja.
 
+## Adminile
+
+Adminid loevad tagasisidet **vormi dashboard'ist** (privaatne, mitte avalikus
+repos) → teevad **triaaži** (bug / feature / templeidi ettepanek, heaks või
+tagasi) → rakendavad heakskiidetu **käsitsi privaatsesse `minai`'sse**. Vt
+[`docs/admin-triage.md`](docs/admin-triage.md).
+
 ---
 
 _This repo is the public front door around the private **minai** project. To send a
