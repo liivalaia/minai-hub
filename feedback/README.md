@@ -1,35 +1,43 @@
-# Feedback inbox
+# Tagasiside (Feedback)
 
-This folder is the inbox for feedback about **minai** — bug reports and feature
-requests both belong here. Entries are plain Markdown so they stay readable by
-both people and agents.
+See on **minai** tagasiside kanal. Siin saad **saata** tagasisidet — kuid ei näe
+teiste saadetisi. Mõtle sellest kui postkastist: kirja saab sisse panna, aga
+sisu näevad ainult adminid.
 
-## How to leave feedback
+## Kuidas saata tagasisidet
 
-Add one Markdown file to this folder per piece of feedback. Name it:
+Kasuta privaatset vormi:
 
-```
-YYYY-MM-DD-short-title.md
-```
+➡️ **[Ava Tagasiside vorm](https://tally.so/r/REPLACE_WITH_FORM_ID)**
 
-Copy the template below and fill it in. One file = one bug report or feature
-request.
+> Vormi link on veel platshoider — repo omanik asendab `REPLACE_WITH_FORM_ID`
+> päris vormi ID-ga. Kuni siis: kirjuta omanikule otse.
 
-## Template
+Vorm sobib nii **vearaportile (bug)**, **funktsiooni soovile (feature)** kui ka
+**templeidi ettepanekule**.
 
-```markdown
+## Privaatsus
+
+- Sinu saadetist **ei näe avalikult keegi peale adminide**. Seda ei salvestata
+  sellesse avalikku repo'sse.
+- **Ära ava avalikku GitHub Issue't** — see oleks kõigile nähtav. Uued Issue'd
+  suunatakse siia (vt allpool).
+
+## Mida MITTE saata
+
+- **Isikuandmeid (PII):** nimi, e-post, telefon, aadress, isikukood jne.
+- **Saladusi:** paroolid, tokenid, võtmed, privaatsed lingid.
+
+Vorm ei küsi isikuandmeid — palun ära lisa neid ka vabateksti.
+
+## Spämm ja kaitse
+
+Vorm on kaitstud (CAPTCHA / rate limit / honeypot), et vältida rämpsu ja
+üleujutust. Seepärast käib saatmine vormi, mitte avaliku Issue/Discussion kaudu.
+
 ---
-type: bug            # bug | feature
-date: YYYY-MM-DD
----
 
-## Summary
-
-One sentence describing the bug or the idea.
-
-## Details
-
-What happened, or what you would like — as much or as little as you want.
-```
-
-Only `type`, `date`, and a `## Summary` are needed; everything else is optional.
+_This is the **minai** feedback channel. You can **send** feedback here, but you
+cannot see other people's submissions — think of it as a mailbox. Use the private
+form above (bug / feature / template idea). Do not open public GitHub Issues, and
+never include PII or secrets._
