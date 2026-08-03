@@ -1,0 +1,11 @@
+# Public Issues are intentionally not used as the feedback inbox: they would be
+# world-readable. Blank issues are disabled and users are redirected to the
+# private Feedback form instead. See feedback/README.md.
+blank_issues_enabled: false
+contact_links:
+  - name: Tagasiside (Feedback) — kuidas saata
+    url: https://github.com/liivalaia/minai-hub/blob/main/feedback/README.md
+    about: Loe, kuidas saata tagasiside privaatselt. Ära ava avalikku Issue't ega lisa PII-d.
+  - name: Ava Tagasiside vorm (privaatne)
+    url: https://feedback.minai.ee
+    about: Privaatne vorm. Saadetist avalik ei näe. Ära lisa PII-d ega tokeneid.
