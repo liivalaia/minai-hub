@@ -7,5 +7,5 @@ contact_links:
     url: https://github.com/liivalaia/minai-hub/blob/main/feedback/README.md
     about: Loe, kuidas saata tagasiside privaatselt. Ära ava avalikku Issue't ega lisa PII-d.
   - name: Ava Tagasiside vorm (privaatne)
-    url: https://tally.so/r/REPLACE_WITH_FORM_ID
-    about: Privaatne vorm (CAPTCHA + spam-kaitse). Saadetist avalik ei näe. Ära lisa PII-d ega tokeneid.
+    url: https://feedback.minai.ee
+    about: Privaatne vorm. Saadetist avalik ei näe. Ära lisa PII-d ega tokeneid.

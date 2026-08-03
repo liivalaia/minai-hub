@@ -15,7 +15,9 @@ kanal.
 Tahad teatada veast (bug) või pakkuda uut funktsiooni / templeidi ideed? Saada see
 **privaatse vormi** kaudu:
 
-➡️ Vaata [`feedback/`](feedback/) — seal on juhis ja link vormile.
+➡️ **[feedback.minai.ee](https://feedback.minai.ee)**
+
+Täpsem juhis: [`feedback/`](feedback/).
 
 Oluline:
 
@@ -42,6 +44,7 @@ tagasi) → rakendavad heakskiidetu **käsitsi privaatsesse `minai`'sse**. Vt
 ---
 
 _This repo is the public front door around the private **minai** project. To send a
-bug report or feature/template idea, use the private feedback form linked in
-[`feedback/`](feedback/). Submissions are not publicly visible — only admins read
-them. Do not open public GitHub Issues, and never include PII or secrets._
+bug report or feature/template idea, use the private feedback form at
+[feedback.minai.ee](https://feedback.minai.ee). Submissions are not publicly
+visible — only admins read them. Do not open public GitHub Issues, and never
+include PII or secrets._

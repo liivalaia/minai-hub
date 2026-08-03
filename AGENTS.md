@@ -21,10 +21,12 @@ to the private `liivalaia/minai` repo (see "Base minai alignment" below).
 
 The feedback pipeline has two distinct layers — keep them separate:
 
-- **Intake** (where the public submits): a **private form** (e.g. Google Forms on
-  a minai domain) is the preferred intake, so submissions stay non-public. A
-  public GitHub Issue Form is only an interim fallback and makes submissions
-  world-readable, so use it only if the owner has explicitly accepted that.
+- **Intake** (where the public submits): the live private form at
+  **https://feedback.minai.ee**. That hostname 301-redirects to a Google Apps
+  Script web app (`script.google.com/macros/.../exec`) that stores responses in a
+  private Google Sheet — submissions are non-public (only admins see them). Note:
+  the Apps Script `exec` endpoint returns 403 to plain bots/curl but 200 in a real
+  browser; that is normal, not an outage.
 - **Mover** (who lifts accepted feedback to the "primary place"): a **separate
   cross-repo agent** with access to both `minai` and `minai-hub` moves triaged
   feedback into the private `minai` repo. This hub never writes to `minai` itself.
@@ -48,9 +50,12 @@ The feedback pipeline has two distinct layers — keep them separate:
 
 ### Gotchas
 
-- The form URL is a **placeholder** (`REPLACE_WITH_FORM_ID`) in `README.md`,
-  `feedback/README.md`, and `.github/ISSUE_TEMPLATE/config.yml`. The owner must
-  replace it with the real form ID once the form exists.
+- The feedback form is at **https://feedback.minai.ee** (referenced in
+  `README.md`, `feedback/README.md`, and `.github/ISSUE_TEMPLATE/config.yml`). No
+  placeholder remains.
+- Reading submissions programmatically (for the mover) needs access to the backing
+  Google Sheet — planned via a **Google MCP in Cursor** (not yet configured at time
+  of writing; verify with the MCP tools before assuming it exists).
 - The issue-template redirect only takes effect once merged to the **default
   branch (`main`)**.
 - Never commit secrets/PII.

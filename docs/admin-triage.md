@@ -5,9 +5,10 @@ Siin ei ole saladusi — ainult protsess.
 
 ## 1. Kust tagasiside laekub
 
-Tagasiside tuleb **privaatse vormi** kaudu (vt `feedback/README.md`). Vastused on
-nähtavad **ainult vormi omanikule** tema dashboardil (nt Tally / Google Forms) —
-avalik repo neid ei sisalda ega näita.
+Tagasiside tuleb privaatse vormi **[feedback.minai.ee](https://feedback.minai.ee)**
+kaudu (Google Apps Script → privaatne Google Sheet). Vastused näeb **ainult
+omanik/admin** Sheetis — avalik repo neid ei sisalda ega näita. Agent saab neid
+lugeda, kui Cursoris on seadistatud **Google MCP** (Sheets/Drive ligipääs).
 
 Avalikku GitHub Issue'sse tagasisidet ei koguta:
 

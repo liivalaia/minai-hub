@@ -8,10 +8,7 @@ sisu näevad ainult adminid.
 
 Kasuta privaatset vormi:
 
-➡️ **[Ava Tagasiside vorm](https://tally.so/r/REPLACE_WITH_FORM_ID)**
-
-> Vormi link on veel platshoider — repo omanik asendab `REPLACE_WITH_FORM_ID`
-> päris vormi ID-ga. Kuni siis: kirjuta omanikule otse.
+➡️ **[feedback.minai.ee](https://feedback.minai.ee)**
 
 Vorm sobib nii **vearaportile (bug)**, **funktsiooni soovile (feature)** kui ka
 **templeidi ettepanekule**.
@@ -30,14 +27,15 @@ Vorm sobib nii **vearaportile (bug)**, **funktsiooni soovile (feature)** kui ka
 
 Vorm ei küsi isikuandmeid — palun ära lisa neid ka vabateksti.
 
-## Spämm ja kaitse
+## Miks vorm, mitte GitHub Issue
 
-Vorm on kaitstud (CAPTCHA / rate limit / honeypot), et vältida rämpsu ja
-üleujutust. Seepärast käib saatmine vormi, mitte avaliku Issue/Discussion kaudu.
+Tagasiside käib **vormi** ([feedback.minai.ee](https://feedback.minai.ee)), mitte
+avaliku GitHub Issue/Discussion kaudu, et saadetised jääksid privaatseks (ainult
+adminid näevad) ja rämps oleks lihtsam tõkestada.
 
 ---
 
 _This is the **minai** feedback channel. You can **send** feedback here, but you
 cannot see other people's submissions — think of it as a mailbox. Use the private
-form above (bug / feature / template idea). Do not open public GitHub Issues, and
-never include PII or secrets._
+form at [feedback.minai.ee](https://feedback.minai.ee) (bug / feature / template
+idea). Do not open public GitHub Issues, and never include PII or secrets._
