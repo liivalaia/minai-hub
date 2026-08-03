@@ -28,11 +28,15 @@ The feedback pipeline has two distinct layers — keep them separate:
   in a private Google Sheet; submissions are non-public (only maintainers + their
   agents can read them). Submit format: POST JSON, schema `minai.feedback/v1`, with a
   shared submit token (shown on the feedback.minai.ee page — do NOT hard-code it in
-  this repo). Notes: the `exec` URL returns 403 to plain bots/curl but 200 in a real
-  browser (normal). A POST runs `doPost` and 302-redirects to a
-  `script.googleusercontent.com/macros/echo` URL whose body is not retrievable by
-  plain curl, so **confirming receipt requires reading the backing Google Sheet**
-  (via a Google MCP, see below).
+  this repo). A **valid** POST returns JSON like `{"ok":true,"id":"fb_…","ack":"registered"}`
+  and the item is queued to the private Sheet; a POST **without a valid token** is
+  rejected (`rejected_client` / `bad_token`). Gotchas: the `exec` URL returns 403 to
+  plain bots/curl but 200 in a real browser (normal); a POST 302-redirects to a
+  `script.googleusercontent.com/macros/echo` URL whose body **plain curl cannot
+  read** (a proper HTTP client / browser does), so verifying with `curl` alone is
+  unreliable — confirm receipt by reading the backing Google Sheet (via a Google
+  MCP, see below). Also: get the submit token from the live page exactly — do not
+  rely on OCR/screenshot transcription of it.
 - **Mover** (who lifts accepted feedback to the "primary place"): a **separate
   cross-repo agent** with access to both `minai` and `minai-hub` moves triaged
   feedback into the private `minai` repo. This hub never writes to `minai` itself.
