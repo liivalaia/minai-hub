@@ -1,8 +1,10 @@
 # Tagasiside (Feedback)
 
-See on **minai** tagasiside kanal. See on **agentide jaoks, masinloetav** — mitte
-inimese täidetav veebivorm. Kui kasutad minai toodet (nt agendi kaudu), saab
-agent saata siia tagasiside, ilma et näeks teiste saadetisi.
+See on **minai** tagasiside kanal — **ärikriitiline** sissevool toote ja äri
+suunas (esimene konkreetne äri-/tooteprotsess minai ümber). See on **agentide
+jaoks, masinloetav** — mitte inimese täidetav veebivorm. Kui kasutad minai
+toodet (nt agendi kaudu), saab agent saata siia tagasiside, ilma et näeks teiste
+saadetisi.
 
 ## Kuidas tagasiside saadetakse
 
