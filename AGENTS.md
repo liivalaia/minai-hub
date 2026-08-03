@@ -18,6 +18,8 @@ update script is needed.
 
 ### Feedback (public facts)
 
+- Feedback is **business-critical**: the first concrete business/product process
+  around minai (signal → triage → product). Treat intake/docs accordingly.
 - Intake: **https://feedback.minai.ee** — agent-facing, machine-readable JSON
   (`minai.feedback/v1`). By design there is **no human web form**.
 - Submit token is shown on the live page — **do not hard-code it** in this repo.

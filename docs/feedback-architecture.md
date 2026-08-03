@@ -3,6 +3,19 @@
 Avalik, saladustevaba ülevaade: **millised süsteemid** moodustavad feedback-toru
 ja **milliseid ligipääse** vaja on. **Võtmete / tokenite väärtusi siia ei kirjutata.**
 
+## Äriline roll
+
+Tagasiside on **ärikriitiline protsess** — mitte kõrvaline “contact form”.
+
+- See on minai ümber **esimene konkreetne äri- ja tootega seotud protsess**:
+  väline / instance’i signaal → privaatne triaaž → otsus → (heakskiidu korral)
+  muutus toote SoT-is (`minai`).
+- Kui intake, talletus või triaaž katkeb, kaob **tooteparanduste ja ideede
+  peamine sissevool**; hub’i muu sisu on peamiselt esik, mitte see toru.
+- Seetõttu: hoia kanal agentiloetavana, privaatsena (saadetisi mitte avalikku
+  repo’sse), ligipääsud dokumenteerituna (see fail) ja triaaž regulaarsena
+  ([`admin-triage.md`](admin-triage.md)).
+
 Seotud:
 
 - Saatmine (avalik): [`feedback/README.md`](../feedback/README.md)

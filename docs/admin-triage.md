@@ -5,6 +5,8 @@ Siin ei ole saladusi — ainult protsess.
 
 Süsteemide ja ligipääsude kaart (mis komponendid, kus elavad võtmed — ilma
 väärtusteta): [`feedback-architecture.md`](feedback-architecture.md).
+Tagasiside on **ärikriitiline** (esimene äri-/tooteprotsess) — triaaži ei
+jäta “kui jõuab” kategooriasse.
 
 ## 1. Kust tagasiside laekub
 

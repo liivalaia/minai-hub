@@ -5,7 +5,8 @@
 **minai-hub** on avalik "esik/hoov" privaatse **minai** projekti ümber. See ei ole
 toote lähtekood ega tõeallikas (SoT) — kood ja tootesisu elavad privaatselt.
 Siin on ainult see, mis on mõeldud avalikuks: lühike tutvustus ja **Tagasiside**
-kanal.
+kanal. Tagasiside on **ärikriitiline** — esimene konkreetne äri- ja tootega
+seotud protsess minai ümber (signaal → triaaž → toode).
 
 - **minai** (privaatne) — toode ise; kood ja sisu ei ole siin avaldatud.
 - **minai-hub** (see repo, avalik) — avalik uks + tagasiside vastuvõtt.
