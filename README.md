@@ -38,11 +38,10 @@ Palun ära lisa tagasisidesse:
 
 ## Adminile
 
-Hooldajad loevad tagasisidet **privaatsest talletusest** (Google Sheet, agent
-ligipääsuga Google MCP kaudu) → teevad **triaaži** (bug / feature / templeidi
-ettepanek, heaks või tagasi) → rakendavad heakskiidetu **käsitsi privaatsesse
-`minai`'sse**. Vt [`docs/admin-triage.md`](docs/admin-triage.md).
-
+Hooldajad loevad tagasisidet **privaatsest talletusest** → teevad **triaaži**
+(bug / feature / templeidi ettepanek, heaks või tagasi) → rakendavad
+heakskiidetu **käsitsi privaatsesse `minai`'sse**. Vt
+[`docs/admin-triage.md`](docs/admin-triage.md).
 ---
 
 _This repo is the public front door around the private **minai** project. Feedback
