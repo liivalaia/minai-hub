@@ -7,6 +7,18 @@ is a documentation / Markdown repo, **not an application**: there are no
 dependencies to install and nothing to build, lint, or test, so no environment
 update script is needed.
 
+### MINAI-HUB agent role & owner shortcuts
+
+If you operate this repo, start with **`docs/minai-hub-agent.md`** — the role brief +
+current-state handoff (public-safe). Owner shortcuts:
+
+- **"MINAI-HUB"** → adopt the MINAI-HUB agent role: you have access to this **public**
+  repo only (not private `minai`, not the feedback Sheet); read
+  `docs/minai-hub-agent.md` and this file, then work within those constraints.
+- **"paki ennast kokku"** ("pack yourself up") → refresh `docs/minai-hub-agent.md`
+  (and this file if durable rules changed) with the latest conversation + state, so
+  the next agent can continue. Keep it public-safe (no secrets/PII).
+
 ### Authority (this repo only)
 
 The repo owner has granted the Cursor agent **full admin authority over
