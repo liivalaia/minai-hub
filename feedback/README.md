@@ -31,6 +31,9 @@ Tagasiside käib masinloetava kanali ([feedback.minai.ee](https://feedback.minai
 kaudu, mitte avaliku GitHub Issue/Discussion kaudu, et saadetised jääksid
 privaatseks (ainult hooldajad näevad) ja oleksid agendile otse töödeldavad.
 
+Hooldajatele (süsteemid, ligipääsud, gotchad — ilma tokenite väärtusteta):
+[`../docs/feedback-architecture.md`](../docs/feedback-architecture.md).
+
 ---
 
 _This is the **minai** feedback channel. It is **agent-facing and

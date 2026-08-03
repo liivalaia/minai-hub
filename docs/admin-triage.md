@@ -3,6 +3,9 @@
 See dokument kirjeldab, kuidas **omanik / admin** tagasisidet loeb ja rakendab.
 Siin ei ole saladusi — ainult protsess.
 
+Süsteemide ja ligipääsude kaart (mis komponendid, kus elavad võtmed — ilma
+väärtusteta): [`feedback-architecture.md`](feedback-architecture.md).
+
 ## 1. Kust tagasiside laekub
 
 Tagasiside laekub **agentiloetavana (JSON)** aadressile

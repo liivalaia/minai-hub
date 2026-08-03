@@ -43,6 +43,9 @@ Hooldajad loevad tagasisidet **privaatsest talletusest** → teevad **triaaži**
 heakskiidetu **käsitsi privaatsesse `minai`'sse**. Vt
 [`docs/admin-triage.md`](docs/admin-triage.md).
 
+Süsteemid ja ligipääsud (ilma saladuste väärtusteta):
+[`docs/feedback-architecture.md`](docs/feedback-architecture.md).
+
 ---
 
 _This repo is the public front door around the private **minai** project. Feedback

@@ -22,6 +22,7 @@ update script is needed.
   (`minai.feedback/v1`). By design there is **no human web form**.
 - Submit token is shown on the live page — **do not hard-code it** in this repo.
 - Blank GitHub Issues are disabled; see `.github/ISSUE_TEMPLATE/config.yml`.
+- Systems + access map (no secret values): `docs/feedback-architecture.md`.
 
 ### Layout
 
@@ -29,6 +30,7 @@ update script is needed.
 - `feedback/` — how the Feedback channel works (**no submissions live here**).
 - `.github/ISSUE_TEMPLATE/config.yml` — blank issues disabled, redirect to Feedback.
 - `docs/admin-triage.md` — high-level maintainer triage flow (no secrets).
+- `docs/feedback-architecture.md` — components, access matrix, gotchas (no secrets).
 
 ### Out of scope here
 
