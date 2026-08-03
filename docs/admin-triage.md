@@ -5,10 +5,11 @@ Siin ei ole saladusi — ainult protsess.
 
 ## 1. Kust tagasiside laekub
 
-Tagasiside tuleb privaatse vormi **[feedback.minai.ee](https://feedback.minai.ee)**
-kaudu (Google Apps Script → privaatne Google Sheet). Vastused näeb **ainult
-omanik/admin** Sheetis — avalik repo neid ei sisalda ega näita. Agent saab neid
-lugeda, kui Cursoris on seadistatud **Google MCP** (Sheets/Drive ligipääs).
+Tagasiside laekub **agentiloetavana (JSON)** aadressile
+**[feedback.minai.ee](https://feedback.minai.ee)** (Google Apps Script →
+privaatne Google Sheet). Kirjeid näeb **ainult hooldaja** Sheetis — avalik repo
+neid ei sisalda ega näita. Agent saab neid lugeda, kui Cursoris on seadistatud
+**Google MCP** (Sheets/Drive ligipääs).
 
 Avalikku GitHub Issue'sse tagasisidet ei koguta:
 
@@ -18,7 +19,7 @@ Avalikku GitHub Issue'sse tagasisidet ei koguta:
 
 ## 2. Triaaž
 
-1. **Loe** uued vormivastused dashboardil.
+1. **Loe** uued kirjed privaatsest Google Sheetist (Google MCP kaudu).
 2. **Liigita:** bug / feature / templeidi ettepanek.
 3. **Otsusta:** heaks (rakenda) või tagasi (jäta / palu täpsustust).
 4. **Kontrolli PII/saladusi** — kui keegi saatis kogemata isikuandmeid või
@@ -36,10 +37,10 @@ eraldi** (uus issue/PR/commit seal). See hub **ei muuda** `minai`'t automaatselt
 
 Tagasiside torul on kaks kihti — hoia need lahus:
 
-- **Intake (kust avalik saadab):** eelistatud on **privaatne vorm** (nt Google
-  Form minai domeenil), et saadetised jääksid mitteavalikuks ja oleksid agendile
-  kättesaadavad (Sheet/API). Avalik GitHub Issue Form on ainult vahefallback ja
-  teeb saadetised avalikult nähtavaks — kasuta seda ainult omaniku selgel loal.
+- **Intake (kuidas tagasiside saabub):** **agentiloetav JSON-kanal**
+  [feedback.minai.ee](https://feedback.minai.ee) (Apps Script → privaatne Sheet).
+  Disaini järgi **inimvormi ei ole** — feedback jääb agentiloetavaks. Saadetised
+  on mitteavalikud.
 - **Mover (kes tõstab põhikohta):** **eraldi cross-repo agent**, millel on
   ligipääs nii `minai` kui `minai-hub`, tõstab triaažitud tagasiside privaatsesse
   `minai`-sse. See hub ise `minai`-t ei muuda.
@@ -52,6 +53,6 @@ avaliku hub'i tippu.
 
 Seed / template-sync tekst (`liivalaia/minai` → `ops/minai-hub-seed/`) viitab
 kohati **avalikele GitHub Issues'tele** kui tagasiside kohale. See on
-**vananenud**: tagasiside käib nüüd **Feedbacki** (privaatne vorm), mitte avalike
-Issues kaudu. Baas-`minai` docs vajavad hiljem joondamist — kuid seda tehakse
-privaatses repos eraldi loaga, mitte siit.
+**vananenud**: tagasiside käib nüüd **Feedbacki** (agentiloetav kanal
+feedback.minai.ee), mitte avalike Issues kaudu. Baas-`minai` docs vajavad hiljem
+joondamist — kuid seda tehakse privaatses repos eraldi loaga, mitte siit.

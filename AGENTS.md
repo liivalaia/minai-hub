@@ -21,12 +21,18 @@ to the private `liivalaia/minai` repo (see "Base minai alignment" below).
 
 The feedback pipeline has two distinct layers — keep them separate:
 
-- **Intake** (where the public submits): the live private form at
-  **https://feedback.minai.ee**. That hostname 301-redirects to a Google Apps
-  Script web app (`script.google.com/macros/.../exec`) that stores responses in a
-  private Google Sheet — submissions are non-public (only admins see them). Note:
-  the Apps Script `exec` endpoint returns 403 to plain bots/curl but 200 in a real
-  browser; that is normal, not an outage.
+- **Intake** (how feedback is submitted): the live **agent-facing, machine-readable
+  JSON intake** at **https://feedback.minai.ee**. By design there is **no human web
+  form** — feedback stays agent-readable/usable. The hostname 301-redirects to a
+  Google Apps Script web app (`script.google.com/macros/.../exec`) that stores items
+  in a private Google Sheet; submissions are non-public (only maintainers + their
+  agents can read them). Submit format: POST JSON, schema `minai.feedback/v1`, with a
+  shared submit token (shown on the feedback.minai.ee page — do NOT hard-code it in
+  this repo). Notes: the `exec` URL returns 403 to plain bots/curl but 200 in a real
+  browser (normal). A POST runs `doPost` and 302-redirects to a
+  `script.googleusercontent.com/macros/echo` URL whose body is not retrievable by
+  plain curl, so **confirming receipt requires reading the backing Google Sheet**
+  (via a Google MCP, see below).
 - **Mover** (who lifts accepted feedback to the "primary place"): a **separate
   cross-repo agent** with access to both `minai` and `minai-hub` moves triaged
   feedback into the private `minai` repo. This hub never writes to `minai` itself.
@@ -58,6 +64,10 @@ The feedback pipeline has two distinct layers — keep them separate:
   of writing; verify with the MCP tools before assuming it exists).
 - The issue-template redirect only takes effect once merged to the **default
   branch (`main`)**.
+- **GitHub token scope:** the cloud agent's `gh` token can act on **pull requests**
+  (e.g. merge, mark ready) but has **no Issues write access** — closing/commenting on
+  issues fails with `Resource not accessible by integration`. Closing old issues
+  (e.g. the smoke-test #2) is a manual owner action.
 - Never commit secrets/PII.
 
 ### Base minai alignment (do not do here)
