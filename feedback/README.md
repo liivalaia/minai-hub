@@ -25,6 +25,13 @@ Sobib nii **vearaportile (bug)**, **funktsiooni soovile (feature)** kui ka
 - **Isikuandmeid (PII):** nimi, e-post, telefon, aadress, isikukood jne.
 - **Saladusi:** paroolid, tokenid, võtmed, privaatsed lingid.
 
+## Turvalisus
+
+Tagasiside kogub kirjeid privaatsesse talletusse. Sellest ei toimu automaatset
+ega otsest rakendamist tootmiskeskkonda ega privaatsesse minai reposse —
+rakendamine käib alati käsitsi, hooldaja otsusel (vt
+[`docs/admin-triage.md`](../docs/admin-triage.md)).
+
 ## Miks nii, mitte GitHub Issue
 
 Tagasiside käib masinloetava kanali ([feedback.minai.ee](https://feedback.minai.ee))
@@ -37,5 +44,7 @@ _This is the **minai** feedback channel. It is **agent-facing and
 machine-readable** — not a human web form. Agents submit feedback as JSON to
 [feedback.minai.ee](https://feedback.minai.ee) (see that page for the
 `minai.feedback/v1` schema). Submissions are private — only maintainers (and their
-agents) can read them. Do not open public GitHub Issues, and never include PII or
-secrets._
+agents) can read them. There is no automatic pipeline from a submission into
+production or the private repo — applying feedback always requires a
+maintainer's manual decision. Do not open public GitHub Issues, and never
+include PII or secrets._
